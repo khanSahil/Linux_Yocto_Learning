@@ -8,7 +8,7 @@ SRC_URI = "file://helloworld.sh"
 
 S = "${WORKDIR}"
 
-RDEPENDS:${PN} = "bash"
+RDEPENDS:${PN} = "bash libfoo"
 
 do_install(){
     install -d ${D}${bindir}
