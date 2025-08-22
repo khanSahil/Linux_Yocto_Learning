@@ -9,7 +9,7 @@ SRC_URI = "file://helloworld.sh"
 S = "${WORKDIR}"
 
 RDEPENDS:${PN} = "bash"
-RCONFLICTS:${PN} = "rconflicts-example2"
+#RCONFLICTS:${PN} = "rconflicts-example2"
 
 do_install(){
     install -d ${D}${bindir}
