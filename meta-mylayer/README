@@ -1,6 +1,13 @@
+# Exploring rconflicts in Yocto
 - In this tutorial we are going learn about rconfilcts.
 - It is a variable used to declare run-time conflicts between different packages.
 - This allows you to specify two or more packages cannot be installed on the target
 system at the same time due to conflicts that my arise during runtime.
 - So it means that through rconflicts we can control that.
 - If two packages are defined in the image, so it shows that error.
+
+
+# Exploring Build Dependencies in Yocto
+- In this tutorial we are going to learn about depends variable of Yocto.
+- Depends variable is used to define or declare a build time dependency for a recipe or package.
+- 
