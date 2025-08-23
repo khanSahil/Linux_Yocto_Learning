@@ -2,7 +2,9 @@ SUMMARY = "Copies Bash Script in /usr/bin"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
 
-DEPENDS = "add"
+#DEPENDS = "add"
+DEPENDS = "libmath"
+
 SRC_URI = "file://calculator.c" 
 S = "${WORKDIR}"
 

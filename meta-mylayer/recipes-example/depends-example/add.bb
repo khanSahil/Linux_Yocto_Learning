@@ -8,6 +8,7 @@ SRC_URI = "file://math_lib.c \
            file://add.c " 
 
 S = "${WORKDIR}"
+PROVIDES = "libmath"
 
 
 do_compile(){
