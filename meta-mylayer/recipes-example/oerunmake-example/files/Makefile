@@ -12,6 +12,7 @@ CALC_OBJ := adv-calculator_inter.o
 
 #Binary Output
 TARGET := adv-calculator
+TARGET ?= ''
 
 all: $(TARGET)
 
