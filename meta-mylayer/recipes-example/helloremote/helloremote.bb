@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384
 SRC_URI = "git://github.com/khanSahil/C_Programs.git;protocol=https;branch=main"
 SRCREV = "50d990d7fdfb59ccca02ab383f7f5c8f9739c194" 
 
-SRC_URI:append = " file://0001-patch-example.patch"
+#SRC_URI:append = " file://0001-patch-example.patch"
 
 S = "${WORKDIR}/git/do_fetch_tutorial"
 
