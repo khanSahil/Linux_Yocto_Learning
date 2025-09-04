@@ -1,0 +1,46 @@
+From c812a3a5a6c72a17d8a1aecb8be6066be9432d5a Mon Sep 17 00:00:00 2001
+From: "sahil.khan" <sahil.khan@microsoft.com>
+Date: Thu, 4 Sep 2025 13:46:41 -0700
+Subject: [PATCH] Added the user input feature
+
+---
+ factorial.c | 23 ++++++-----------------
+ 1 file changed, 6 insertions(+), 17 deletions(-)
+
+diff --git a/factorial.c b/factorial.c
+index 8b276eb..54ed102 100644
+--- a/factorial.c
++++ b/factorial.c
+@@ -9,26 +9,15 @@ unsigned long long factorial(int n) {
+     return n * factorial(n - 1);
+ }
+ 
+-int usage(void) {
+-    printf("\nUsage\n");
+-    printf("============================\n");
+-    printf("factorial <positive-integer>\n");
+-    printf("============================\n");
+-    return(0);
+-}
+-
+ int main(int argc, char *argv[]) {  
+-    if(argc<=1) {
+-        printf("ERROR: No argument found...\n");
+-        usage();
+-        exit(1);
+-     }
++
+     int num;
+-    num = atoi(argv[1]);
+-    if (num < 0) {
++
++    printf("Enter the number to find the factorial: ");
++    scanf("%d", &num);
++
++    if (num < 0)
+         printf("Factorial of negative numbers is not defined.\n");
+-        usage();
+-    }
+     else
+         printf("Factorial of %d is %llu.\n", num, factorial(num));
+ 

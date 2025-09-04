@@ -12,7 +12,9 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-SRC_URI = "git://github.com/khanSahil/factorial.git;protocol=https;branch=master"
+SRC_URI = "git://github.com/khanSahil/factorial.git;protocol=https;branch=master \
+           file://0001-Added-the-user-input-feature.patch \
+           "
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
